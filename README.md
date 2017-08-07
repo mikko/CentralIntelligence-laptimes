@@ -1,2 +1,2 @@
-# CentralIntelligence-weather
-Weather service for CI
+# CentralIntelligence-laptimes
+Laptimes integration for Central Intelligence
