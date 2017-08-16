@@ -4,6 +4,7 @@ module.exports = {
     serverPort: 3000,
     myHost: 'localhost',
     myPort: 3005,
+    authKey: '', // Change this
     actions: {
         leaderboard: {
             keywords: [
