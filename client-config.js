@@ -4,9 +4,10 @@ module.exports = {
     serverPort: 3000,
     myHost: 'localhost',
     myPort: 3005,
-    authKey: '', // Change this
+    authKey: 'ASDASD', // Change this
     actions: {
         leaderboard: {
+            exactPhrase: 'laptimes',
             keywords: [
                 {
                     word: 'standing',
@@ -23,6 +24,7 @@ module.exports = {
             ]
         },
         addRecord: {
+            exactPhrase: 'add laptime',
             keywords: [
                 {
                     word: 'add',
@@ -31,10 +33,6 @@ module.exports = {
                 {
                     word: 'enter',
                     type: 'verb'
-                },
-                {
-                    word: 'time',
-                    type: 'noun'
                 },
                 {
                     word: 'entry',
