@@ -1,10 +1,12 @@
+const fs = require('fs');
+
 module.exports = {
     name: 'laptimes racing',
-    serverHost: 'localhost',
-    serverPort: 3000,
-    myHost: 'localhost',
-    myPort: 3005,
-    authKey: 'ASDASD', // Change this
+    serverHost: process.env.SERVER_HOST || 'localhost',
+    serverPort: process.env.SERVER_PORT || 3000,
+    myHost: process.env.MY_HOST || 'localhost',
+    myPort: process.env.MY_PORT || 3005,
+    authKey: process.env.AUTH_KEY || fs.readFileSync('/run/secrets/authkey', { encoding: 'utf-8' }).trim(),
     actions: {
         leaderboard: {
             exactPhrase: 'laptimes',
